@@ -11,4 +11,5 @@ print(f"Sorted:   {sorted(marks, reverse=True)}")
 
 print(f"Passed:   {sum(mark >= 40 for mark in marks)}")
 
-print("Everyone passed!" * all(mark >= 40 for mark in marks))
+if all(mark >= 40 for mark in marks):
+    print("Everyone passed!")
